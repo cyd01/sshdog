@@ -56,19 +56,19 @@ func getPort(box *rice.Box) int16 {
 }
 
 // Just check if a file exists
-func fileExists(box *rice.Box, name string) bool {
+func sshfileExists(box *rice.Box, name string) bool {
 	_, err := box.Bytes(name)
 	return err == nil
 }
 
 // Should we daemonize?
 func shouldDaemonize(box *rice.Box) bool {
-	return fileExists(box, "daemon")
+	return sshfileExists(box, "daemon")
 }
 
 // Should we be silent?
 func beQuiet(box *rice.Box) bool {
-	return fileExists(box, "quiet")
+	return sshfileExists(box, "quiet")
 }
 
 var mainBox *rice.Box
