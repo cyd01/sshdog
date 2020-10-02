@@ -35,8 +35,6 @@ Example usage:
 [DEBUG] select...
 ```
 
-Author: Cyd <cyd@piratemind.com>
-
 From: David Tomaschik <dwt@google.com>
 
 *This is not a Google product, merely code that happens to be owned by Google.*
