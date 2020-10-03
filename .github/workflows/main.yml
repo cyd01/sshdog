@@ -17,8 +17,8 @@ jobs:
       - name: Make binaries
         uses: cyd01/actions/golang-build@master
         # Uncomment to following piece to restrict targets
-        # with:
-        #   args: linux/amd64 darwin/amd64
+        with:
+          args: linux/386 linux/amd64 linux/arm64 windows/386 windows/amd64
 
       - name: Upload artefacts
         uses: actions/upload-artifact@v2
