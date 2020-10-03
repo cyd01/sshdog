@@ -18,7 +18,7 @@ package main
 import (
 	"fmt"
 	"github.com/google/shlex"
-	"sshdog/pty"
+	"github.com/cyd01/sshdog/pty"
 	"github.com/pkg/sftp"
 	"golang.org/x/crypto/ssh"
 	"io"
